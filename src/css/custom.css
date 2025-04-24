@@ -23,8 +23,8 @@
   --ifm-color-secondary-lightest: #ffe566;
   
   --ifm-code-font-size: 95%;
-  --ifm-font-family-base: 'Anton', sans-serif;
-  --ifm-heading-font-family: 'Anton', sans-serif;
+  --ifm-font-family-base: 'Inter', system-ui, -apple-system, sans-serif;
+  --ifm-heading-font-family: 'Inter', system-ui, -apple-system, sans-serif;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
@@ -45,7 +45,7 @@
 
 /* Aplicamos la fuente Anton a todo el sitio */
 html, body {
-  font-family: 'Anton', sans-serif;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
   letter-spacing: 0.5px;
 }
 
@@ -160,7 +160,7 @@ article {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Anton', sans-serif;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
   letter-spacing: 1px;
 }
 

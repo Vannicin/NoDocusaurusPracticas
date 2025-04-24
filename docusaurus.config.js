@@ -12,20 +12,20 @@ import {themes as prismThemes} from 'prism-react-renderer';
 const config = {
   title: 'APRENDE A USAR EL INSPECTOR DE ELEMENTOS',
   tagline: 'Una guía gratuita que te servirá de mucho y navegar como un profesional',
-  favicon: 'img/favicon.ico',
+  favicon: 'static/img/maddigi.ico',
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://900112022.senati.chat.pe',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: '/docusaurus',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'facebook', // Usually your GitHub org/user name.
   projectName: 'docusaurus', // Usually your repo name.
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internationalization, you can use this field to set
@@ -38,7 +38,7 @@ const config = {
 
   // Agregamos las hojas de estilo para las fuentes personalizadas
   stylesheets: [
-    'https://fonts.googleapis.com/css2?family=Anton&display=swap',
+    'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap',
   ],
 
   presets: [
