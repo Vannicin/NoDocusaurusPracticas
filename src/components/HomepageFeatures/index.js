@@ -1,49 +1,77 @@
+import React from 'react';
 import clsx from 'clsx';
-import Heading from '@theme/Heading';
 import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'INSPECCIONAR ELEMENTOS',
+    icon: '🔍',
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Aprende a navegar por el código HTML, examinar y modificar elementos en tiempo real
+        para entender cómo están estructurados los sitios web.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: 'ANALIZAR ESTILOS CSS',
+    icon: '🎨',
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Domina las herramientas para ver y editar estilos CSS, entender la cascada y resolver
+        problemas de diseño con facilidad.
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'DEPURAR JAVASCRIPT',
+    icon: '⚡',
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Descubre cómo utilizar la consola y el depurador para analizar el comportamiento de tu JavaScript
+        y solucionar errores rápidamente.
+      </>
+    ),
+  },
+  {
+    title: 'OPTIMIZAR RENDIMIENTO',
+    icon: '🚀',
+    description: (
+      <>
+        Usa las herramientas de rendimiento para identificar cuellos de botella, mejorar la carga
+        de páginas y crear experiencias web más rápidas.
+      </>
+    ),
+  },
+  {
+    title: 'ADAPTAR DISEÑOS',
+    icon: '📱',
+    description: (
+      <>
+        Visualiza y prueba cómo se ve tu sitio en diferentes dispositivos y resoluciones 
+        para garantizar un diseño responsivo perfecto.
+      </>
+    ),
+  },
+  {
+    title: 'TRUCOS AVANZADOS',
+    icon: '🔧',
+    description: (
+      <>
+        Accede a técnicas profesionales para manipular cookies, simular geolocalización,
+        editar solicitudes de red y mucho más.
       </>
     ),
   },
 ];
 
-function Feature({Svg, title, description}) {
+function Feature({icon, title, description}) {
   return (
     <div className={clsx('col col--4')}>
-      <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
-      </div>
-      <div className="text--center padding-horiz--md">
-        <Heading as="h3">{title}</Heading>
-        <p>{description}</p>
+      <div className={styles.feature}>
+        <div className={styles.featureIcon}>{icon}</div>
+        <h3 className={styles.featureTitle}>{title}</h3>
+        <p className={styles.featureDescription}>{description}</p>
       </div>
     </div>
   );
@@ -53,6 +81,11 @@ export default function HomepageFeatures() {
   return (
     <section className={styles.features}>
       <div className="container">
+        <div className="row">
+          <div className="col col--12">
+            <h2 className={styles.featuresTitle}>LO QUE APRENDERÁS</h2>
+          </div>
+        </div>
         <div className="row">
           {FeatureList.map((props, idx) => (
             <Feature key={idx} {...props} />

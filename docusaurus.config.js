@@ -10,8 +10,8 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'APRENDE A USAR EL INSPECTOR DE ELEMENTOS',
+  tagline: 'Una guía gratuita que te servirá de mucho y navegar como un profesional',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -32,9 +32,14 @@ const config = {
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: 'es',
+    locales: ['es'],
   },
+
+  // Agregamos las hojas de estilo para las fuentes personalizadas
+  stylesheets: [
+    'https://fonts.googleapis.com/css2?family=Anton&display=swap',
+  ],
 
   presets: [
     [
@@ -46,7 +51,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/Vannicin',
         },
         blog: {
           showReadingTime: true,
@@ -57,7 +62,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/Vannicin',
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
@@ -76,22 +81,25 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'My Site',
+        title: 'INICIA TU APRENDIZAJE',
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          alt: 'Mi Sitio Logo',
+          src: 'https://i.ibb.co/wrgsXB67/MADDIGI-removebg-preview-1.png',
         },
         items: [
           {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: 'CONTENIDO',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
+            href: 'https://github.com/Vannicin',
+            label: 'GITHUB',
+            position: 'right',
+          },
+          {
+            type: 'search',
             position: 'right',
           },
         ],
@@ -100,50 +108,51 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'DOCUMENTACIÓN',
             items: [
               {
-                label: 'Tutorial',
+                label: 'INTRODUCCIÓN',
                 to: '/docs/intro',
               },
-            ],
-          },
-          {
-            title: 'Community',
-            items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'X',
-                href: 'https://x.com/docusaurus',
+                label: 'GUÍAS',
+                to: '/docs/category/tutorial-basics',
               },
             ],
           },
           {
-            title: 'More',
+            title: 'COMUNIDAD',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
+                label: 'DISCORD',
+                href: 'https://discord.gg/yRDvZcsmZk',
               },
               {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                label: 'WHATSAPP',
+                href: 'https://wa.me/51987654321',
+              },
+            ],
+          },
+          {
+            title: 'MÁS',
+            items: [
+              {
+                label: 'GITHUB',
+                href: 'https://github.com/Vannicin',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} APRENDE A USAR EL INSPECTOR DE ELEMENTOS. Construido con Docusaurus.`,
       },
       prism: {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
+      },
+      colorMode: {
+        defaultMode: 'light',
+        disableSwitch: false,
+        respectPrefersColorScheme: true,
       },
     }),
 };

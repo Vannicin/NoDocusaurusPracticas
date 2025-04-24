@@ -2,42 +2,36 @@
 sidebar_position: 1
 ---
 
-# Create a Page
+# 🔻 Lo básico del Inspector de Elementos
 
-Add **Markdown or React** files to `src/pages` to create a **standalone page**:
+El Inspector de Elementos es una de las herramientas más poderosas para desarrolladores web, y está integrada en navegadores como **Chrome, Firefox y Edge**.
 
-- `src/pages/index.js` → `localhost:3000/`
-- `src/pages/foo.md` → `localhost:3000/foo`
-- `src/pages/foo/bar.js` → `localhost:3000/foo/bar`
+Con esta herramienta puedes:
 
-## Create your first React Page
+- Ver y modificar el **HTML** de una página en tiempo real.
+- Cambiar estilos **CSS** sin tocar el código fuente.
+- Probar diseños, colores, tamaños y posicionamientos rápidamente.
+- Depurar errores o comportamientos inesperados.
+- Aprender cómo están estructuradas otras páginas web.
 
-Create a file at `src/pages/my-react-page.js`:
+## Cómo abrir el Inspector
 
-```jsx title="src/pages/my-react-page.js"
-import React from 'react';
-import Layout from '@theme/Layout';
+Para empezar, simplemente:
 
-export default function MyReactPage() {
-  return (
-    <Layout>
-      <h1>My React page</h1>
-      <p>This is a React page</p>
-    </Layout>
-  );
-}
-```
+- Haz clic derecho en cualquier parte de una página web y selecciona **"Inspeccionar"**.
+- O usa el atajo de teclado `F12` o `Ctrl + Shift + I` (`Cmd + Option + I` en Mac).
 
-A new page is now available at [http://localhost:3000/my-react-page](http://localhost:3000/my-react-page).
+Esto abrirá una ventana dividida, generalmente en la parte inferior o lateral del navegador.
 
-## Create your first Markdown Page
+## Explorando la interfaz
 
-Create a file at `src/pages/my-markdown-page.md`:
+Las pestañas principales que verás son:
 
-```mdx title="src/pages/my-markdown-page.md"
-# My Markdown page
+- **Elements** (o Inspector): muestra el árbol DOM y los estilos CSS aplicados.
+- **Console**: útil para ver errores y ejecutar código JavaScript.
+- **Network**: para analizar las peticiones al servidor.
+- **Application**: acceso a cookies, almacenamiento local y más.
 
-This is a Markdown page
-```
+En este apartado aprenderás a dominar lo básico para inspeccionar y editar páginas web directamente desde tu navegador.
 
-A new page is now available at [http://localhost:3000/my-markdown-page](http://localhost:3000/my-markdown-page).
+¡Sigamos explorando!

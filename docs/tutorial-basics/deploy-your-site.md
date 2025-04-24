@@ -2,30 +2,44 @@
 sidebar_position: 5
 ---
 
-# Deploy your site
+# 🔥 Analiza rendimiento, acces. y comportamiento
 
-Docusaurus is a **static-site-generator** (also called **[Jamstack](https://jamstack.org/)**).
+Más allá de modificar HTML y CSS, el Inspector de Elementos cuenta con herramientas avanzadas que permiten evaluar aspectos **cruciales como el rendimiento, la accesibilidad, el uso de memoria y más**.
 
-It builds your site as simple **static HTML, JavaScript and CSS files**.
+## Panel de "Performance"
 
-## Build your site
+Este panel permite **grabar y analizar** cómo se comporta una página en tiempo real. Úsalo para ver:
 
-Build your site **for production**:
+- Cuánto tarda en cargar y renderizar una página.
+- Qué procesos consumen más recursos.
+- Cuáles scripts bloquean el hilo principal.
 
-```bash
-npm run build
-```
+Ideal para detectar cuellos de botella, animaciones lentas, o carga innecesaria de recursos.
 
-The static files are generated in the `build` folder.
+## Panel de "Lighthouse"
 
-## Deploy your site
+Lighthouse es una herramienta integrada que **audita tu sitio** en cuatro áreas clave:
 
-Test your production build locally:
+- **Performance**
+- **Accesibilidad**
+- **Buenas prácticas**
+- **SEO**
 
-```bash
-npm run serve
-```
+Con un solo clic puedes generar un reporte completo con puntuaciones y recomendaciones específicas para mejorar tu web.
 
-The `build` folder is now served at [http://localhost:3000/](http://localhost:3000/).
+## Panel de "Memory" y "Network"
 
-You can now deploy the `build` folder **almost anywhere** easily, **for free** or very small cost (read the **[Deployment Guide](https://docusaurus.io/docs/deployment)**).
+- **Memory**: perfecto para ver el consumo de memoria y detectar posibles fugas (memory leaks).
+- **Network**: muestra cada solicitud HTTP y recurso cargado por tu sitio. Te ayuda a ver qué archivos pesan más y cómo se cargan.
+
+## Panel de "Accessibility"
+
+Evalúa automáticamente si los elementos de tu página web cumplen con estándares de accesibilidad:
+
+- Contraste de color.
+- Presencia de etiquetas `alt` en imágenes.
+- Uso correcto de `aria-label`, entre otros.
+
+## Conclusión
+
+Estas herramientas te dan una **visión completa** de lo que ocurre "detrás de cámaras" en tu sitio. No solo diseñarás mejor, sino que crearás experiencias más accesibles, rápidas y profesionales.

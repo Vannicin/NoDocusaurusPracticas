@@ -2,56 +2,38 @@
 sidebar_position: 2
 ---
 
-# Create a Document
+# 👌 ¿Cómo usarlo?
 
-Documents are **groups of pages** connected through:
+El Inspector de Elementos puede parecer intimidante al principio, ¡pero es muy fácil de usar una vez que lo entiendes!
 
-- a **sidebar**
-- **previous/next navigation**
-- **versioning**
+## Accede al Inspector
 
-## Create your first Doc
+Tienes varias formas de abrirlo:
 
-Create a Markdown file at `docs/hello.md`:
+- Haz clic derecho sobre cualquier elemento de una página web y elige **"Inspeccionar"**.
+- Usa el atajo del teclado `F12` o `Ctrl + Shift + I` (en Mac `Cmd + Option + I`).
 
-```md title="docs/hello.md"
-# Hello
+Esto abrirá una consola del desarrollador dividida (usualmente en la parte inferior o lateral del navegador), con el **Inspector** activo por defecto.
 
-This is my **first Docusaurus document**!
-```
+## Explora y edita elementos
 
-A new document is now available at [http://localhost:3000/docs/hello](http://localhost:3000/docs/hello).
+Al pasar el cursor sobre el código HTML en el panel del inspector:
 
-## Configure the Sidebar
+- Verás que se resalta el elemento correspondiente en la página.
+- Puedes **hacer clic en una etiqueta** HTML para ver y editar sus propiedades y estilos.
 
-Docusaurus automatically **creates a sidebar** from the `docs` folder.
+### Cambiar texto o estilos
 
-Add metadata to customize the sidebar label and position:
+Haz doble clic sobre el contenido de una etiqueta o edita los estilos en el panel derecho. ¡Verás los cambios reflejados de inmediato en la página!
 
-```md title="docs/hello.md" {1-4}
----
-sidebar_label: 'Hi!'
-sidebar_position: 3
----
+Este tipo de pruebas **no afectan el código fuente real**, solo lo que ves en ese momento en tu navegador.
 
-# Hello
+## Ideal para aprendizaje y pruebas
 
-This is my **first Docusaurus document**!
-```
+El inspector te permite:
 
-It is also possible to create your sidebar explicitly in `sidebars.js`:
+- Entender cómo está construida una página.
+- Ver qué estilos afectan a cada elemento.
+- Detectar errores y solucionarlos más rápido.
 
-```js title="sidebars.js"
-export default {
-  tutorialSidebar: [
-    'intro',
-    // highlight-next-line
-    'hello',
-    {
-      type: 'category',
-      label: 'Tutorial',
-      items: ['tutorial-basics/create-a-document'],
-    },
-  ],
-};
-```
+¡Sigue practicando para dominar esta herramienta esencial!

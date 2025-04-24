@@ -2,46 +2,43 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# 💻 Introducción al Inspector de Elementos
 
-Let's discover **Docusaurus in less than 5 minutes**.
+Descubre cómo **dominar el Inspector de Elementos en menos de 5 minutos**.
 
-## Getting Started
+## Primeros Pasos
 
-Get started by **creating a new site**.
+Comienza aprendiendo a **utilizar el Inspector de Elementos** de tu navegador favorito (Chrome, Firefox, Edge, etc.).
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+O explóralo directamente con un sitio web y **haz clic derecho > Inspeccionar**.
 
-### What you'll need
+### ¿Qué necesitas?
 
-- [Node.js](https://nodejs.org/en/download/) version 18.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+- Un navegador moderno como:
+  - [Google Chrome](https://www.google.com/chrome/)
+  - [Mozilla Firefox](https://www.mozilla.org/firefox/)
+  - [Microsoft Edge](https://www.microsoft.com/edge)
 
-## Generate a new site
+## ¿Qué es el Inspector de Elementos?
 
-Generate a new Docusaurus site using the **classic template**.
+Es una herramienta integrada en los navegadores que te permite:
 
-The classic template will automatically be added to your project after you run the command:
+- Ver y editar el **HTML y CSS** de una página en tiempo real.
+- Depurar errores en **JavaScript**.
+- Analizar el rendimiento y estructura de tu sitio.
+- Explorar cómo está construida cualquier página web.
 
-```bash
-npm init docusaurus@latest my-website classic
-```
+## Empezar a usarlo
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
+Haz clic derecho en cualquier parte de una página web y selecciona **"Inspeccionar"** o presiona `F12`.
 
-The command also installs all necessary dependencies you need to run Docusaurus.
+Esto abrirá una consola con múltiples pestañas como:
 
-## Start your site
+- **Elements**: para inspeccionar y modificar HTML y CSS.
+- **Console**: para ver mensajes, errores y ejecutar comandos JS.
+- **Network**: para ver las solicitudes de red.
+- **Sources, Performance, Application**, entre otros.
 
-Run the development server:
+En esta documentación aprenderás paso a paso cómo usar todas estas herramientas de forma práctica para mejorar tus habilidades como desarrollador o analista web.
 
-```bash
-cd my-website
-npm run start
-```
-
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+¡Comencemos!

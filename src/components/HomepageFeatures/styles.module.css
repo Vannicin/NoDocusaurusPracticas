@@ -1,11 +1,83 @@
 .features {
   display: flex;
   align-items: center;
-  padding: 2rem 0;
+  padding: 4rem 0;
   width: 100%;
+  background-color: white;
 }
 
-.featureSvg {
-  height: 200px;
-  width: 200px;
+.featuresTitle {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: #0057b7;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+  display: inline-block;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.featuresTitle::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 4px;
+  background-color: #ffd700;
+}
+
+.feature {
+  background-color: white;
+  border-radius: 8px;
+  padding: 2rem;
+  height: 100%;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  margin-bottom: 2rem;
+  border: 2px solid transparent;
+}
+
+.feature:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+  border-color: #ffd700;
+}
+
+.featureIcon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.featureTitle {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #0057b7;
+  letter-spacing: 1px;
+}
+
+.featureDescription {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Modo oscuro */
+[data-theme='dark'] .features {
+  background-color: #252734;
+}
+
+[data-theme='dark'] .feature {
+  background-color: #1e2028;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+[data-theme='dark'] .featuresTitle {
+  color: #3d9bf3;
+}
+
+[data-theme='dark'] .featureTitle {
+  color: #3d9bf3;
 }
