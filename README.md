@@ -1,6 +1,6 @@
 # SITIO WEB DESPLEGADO EN CPANEL
 
-https://900112022.senati.chat.pe/docusaurus/](https://vannicin.github.io/NoDocusaurusPracticas/
+https://vannicin.github.io/NoDocusaurusPracticas/
 
 # 🕵️‍♂️ NoDocusaurusPracticas
 
